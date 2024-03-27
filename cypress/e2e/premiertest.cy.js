@@ -3,12 +3,12 @@ describe ('test technique',()=>{
         cy.visit('https://magento.softwaretestingboard.com/')
     })
 
-it('premier test',()=>{
+it('Création de compte',()=>{
     cy.contains('Sign In').click()
     cy.contains('Create an Account').click()
-    cy.get('#firstname').type('jeudi')
-    cy.get('#lastname').type('user_012348')
-    cy.get('#email_address').type('jeudi.user_012348@yopmail.com')
+    cy.get('#firstname').type('mardi')
+    cy.get('#lastname').type('user_092348')
+    cy.get('#email_address').type('mardi.user_092348@yopmail.com')
     cy.get('#password').type('123vivaalgerie+')
     cy.get('#password-confirmation').type('123vivaalgerie+')
     cy.contains('Create an Account').click()
