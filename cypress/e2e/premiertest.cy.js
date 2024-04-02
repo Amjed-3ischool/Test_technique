@@ -6,9 +6,9 @@ describe ('test technique',()=>{
 it('Création de compte',()=>{
     cy.contains('Sign In').click()
     cy.contains('Create an Account').click()
-    cy.get('#firstname').type('mardi')
-    cy.get('#lastname').type('user_092348')
-    cy.get('#email_address').type('mardi.user_092348@yopmail.com')
+    cy.get('#firstname').type('lundi')
+    cy.get('#lastname').type('user_072348')
+    cy.get('#email_address').type('lundi.user_072348@yopmail.com')
     cy.get('#password').type('123vivaalgerie+')
     cy.get('#password-confirmation').type('123vivaalgerie+')
     cy.contains('Create an Account').click()
