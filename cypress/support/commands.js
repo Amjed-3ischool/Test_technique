@@ -10,7 +10,14 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('inscription', (firstname, lastname, email, password) => {
+    cy.get('#firstname').type(firstname)
+    cy.get('#lastname').type(lastname)
+    cy.get('#email_address').type(email)
+    cy.get('#password').type(password)
+    cy.get('#password-confirmation').type(password)
+    cy.get('[title="Create an Account"]').click()
+})
 //
 //
 // -- This is a child command --
